@@ -1,0 +1,173 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(to right, transparent -10%, black 110% ), url('https://wallpapercave.com/wp/cqhO8rQ.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Dokdo', cursive;
+  overflow: scroll;
+}
+.title{
+  text-align: center;
+  font-size:85px;
+  color:rgba(246,8,0,0.9) ;
+  text-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+h3{
+  margin-bottom: 10px;
+}
+.pokeImg {
+  width: 800px;
+  height: 600px;
+  margin-left: 50px;
+  margin-top: 50px;
+  opacity: .9;
+  background: url('https://astro.temple.edu/~tuf09411/Images/Pokedex2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+  /* border: black 2px solid; */
+
+}
+.pokeInfo, .pokemon{
+  width: 281px;
+  height: 206px;
+  margin-left: 253px;
+  /* border: white 1px solid; */
+  border-radius: 7px;
+}
+.pokemon {
+  margin-top: 42px;
+  position: fixed;
+  text-align: center;
+  background: url('https://library.creativecow.net/articles/alkattan_omar/green_land/fig_12_green.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: cover;
+
+}
+.pokemon img {
+  width: 100%;
+  height: 100%;
+  padding-top:;
+}
+.pokepic{
+  width: 100%;
+  height: 100%;
+  border: black 1px solid;
+}
+.pokeInfo {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
+  margin-top: 355px;
+  position: fixed;
+  overflow: scroll;
+  overflow-y: scroll;
+  padding: 4px;
+  text-transform: uppercase;
+}
+.pokeInfo p {
+  margin-top: 10px;
+}
+button {
+ width: 100px;
+ font-size: 15px;
+ padding: 2px;
+ border-radius: 7px;
+ margin: 10px 0;
+ font-weight: bold;
+}
+.playerPoke{
+  width: 505px;
+  height: 605px;
+  position: fixed;
+  margin-left: 900px;
+  text-align: center;
+}
+.playerPoke h2{
+  margin: 10px 0;
+  font-size: 40px;
+}
+.grid-container {
+  display: grid;
+  width: 500px;
+  height: 600px;
+  grid-template-columns: auto auto;
+  text-align: center;
+
+}
+.grid-item {
+  border: 4px solid #BFBFBF;
+  border-radius: 50%;
+  transition: border-radius 1s;
+  text-align: center;
+  color: rgba(246,8,0,0.5);
+  font-weight: bold;
+  font-size: 35px;
+  text-shadow: 5px 5px 5px rgba(0,0,0,.8);
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.grid-item img {
+}
+.grid-item p {
+  margin-top: 145px;
+}
+.grid-item:hover {
+  width: 220px;
+  height: 220px;
+  font-size: 45px;
+  color: rgba(246,8,0,0.9);
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5);
+
+}
+.hidden {
+  display: none;
+
+}
+.volcanion {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/7/7c/Volcanion_M19.png/250px-Volcanion_M19.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+.drapion {
+  background: url('https://vignette.wikia.nocookie.net/pokemon/images/a/a1/J_Drapion.png/revision/latest?cb=20150906052624');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.doublade {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/b/b2/Sawyer_Doublade.png/250px-Sawyer_Doublade.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.carbink {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/8/86/Kalos_Route_14_Carbink.png/250px-Kalos_Route_14_Carbink.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.archeops {
+  background: url('https://assets.pokemon.com/assets/cms2/img/watch-pokemon-tv/seasons/season14/season14_ep36_ss04.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.dhelmise {
+  background: url('https://pm1.narvii.com/6369/3550f0b1b8645083fa08801b391c878ac641348e_hq.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

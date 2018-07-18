@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Pokedex</title>
+</head>
+
+<body>
+  <h1 class="title">Pokedex</h1>
+  <div id="pokedex" class="pokeImg">
+    <div class="pokemon">
+      <img id="pokeDisplay"src="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif" alt="pikachu">
+    </div>
+    <div class="pokeInfo">
+      <h3>Trainer: <span id="trainer"></span></h3>
+      <h3>Name: <span id="name"></span> </h3>
+      <p>HP: <span id="hp"></span></p>
+      <p>Attack: <span id="attack"></span></p>
+      <p>Defence: <span id="defence"></span></p>
+      <p>Abilities: <span id="abilities"></span></p>
+      <button onclick="moreInfo()" class="moreInfo">More Info</button>
+      <button onclick="playerName()" class="player">Sign In</button>
+      <div id="more" class="hidden">
+        <p>Priority: <span id="priority"></span></p>
+        <p>Power: <span id="power"></span></p>
+        <p>Accuuracy: <span id="accuuracy"></span></p>
+      </div>
+
+
+    </div>
+
+
+  </div>
+  <div id="player"class="playerPoke hidden">
+    <div class="grid-container">
+      <div class="grid-item volcanion"onclick="volcanion()">
+        <p>Volcanion</p>
+      </div>
+      <div class="grid-item drapion"onclick="drapion()">
+        <p>Drapion</p>
+      </div>
+      <div class="grid-item doublade" onclick="doublade()">
+        <p>Doublabe</p>
+      </div>
+      <div class="grid-item carbink" onclick="carbink()">
+        <p>Carbink</p>
+      </div>
+      <div class="grid-item archeops" onclick="archeops()">
+        <p>Archeops</p>
+      </div>
+      <div class="grid-item dhelmise" onclick="dhelmise()">
+        <p>Dhelmise</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
