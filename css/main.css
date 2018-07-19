@@ -37,12 +37,11 @@ h3{
 }
 .pokeInfo, .pokemon{
   width: 281px;
-  height: 206px;
   margin-left: 253px;
-  /* border: white 1px solid; */
   border-radius: 7px;
 }
 .pokemon {
+  height: 206px;
   margin-top: 42px;
   position: fixed;
   text-align: center;
@@ -63,6 +62,7 @@ h3{
   border: black 1px solid;
 }
 .pokeInfo {
+  height: 199px;
   font-family: 'Press Start 2P', cursive;
   font-size: 13px;
   margin-top: 355px;
@@ -76,12 +76,21 @@ h3{
   margin-top: 10px;
 }
 button {
- width: 100px;
- font-size: 15px;
+ width: 125px;
+ font-size: 12px;
  padding: 2px;
  border-radius: 7px;
  margin: 10px 0;
  font-weight: bold;
+ font-family: 'Press Start 2P', cursive;
+ box-shadow: 3px 3px 5px rgba(0,0,0,.8);
+}
+button:hover {
+  background:rgba(255,255,255,.5);
+}
+button:active{
+  font-size: 11px;
+  box-shadow: none;
 }
 .playerPoke{
   width: 505px;
@@ -110,7 +119,7 @@ button {
   color: rgba(246,8,0,0.5);
   font-weight: bold;
   font-size: 35px;
-  text-shadow: 5px 5px 5px rgba(0,0,0,.8);
+  text-shadow: 2px 2px 1px rgba(0,0,0,.8);
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -129,6 +138,11 @@ button {
   border-radius: 7px;
   box-shadow: 5px 5px 5px rgba(255,255,255,.5);
 
+}
+.grid-item:active {
+  width: 200px;
+  height: 200px;
+  box-shadow: none;
 }
 .hidden {
   display: none;

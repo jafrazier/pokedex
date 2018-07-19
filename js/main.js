@@ -60,7 +60,7 @@ function doublade() {
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
       // document.getElementById('pokeDisplay').src = myObj.sprites.front_default;
-      document.getElementById('pokeDisplay').src ='https://pa1.narvii.com/6474/00d2b4f63883f8c62389e8b57c68d7d618197cb6_hq.gif';
+      document.getElementById('pokeDisplay').src ='https://thumbs.gfycat.com/ReadyFelineEyelashpitviper-size_restricted.gif';
       document.getElementById("name").innerHTML = myObj.name;
       document.getElementById("hp").innerHTML = myObj.stats[5].base_stat;
       document.getElementById("attack").innerHTML = myObj.stats[4].base_stat;
@@ -72,7 +72,7 @@ function doublade() {
 
     }
   };
-  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/680/  ", true);
+  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/680/", true);
   xhttp.send();
 }
 function carbink() {
@@ -81,7 +81,7 @@ function carbink() {
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
       // document.getElementById('pokeDisplay').src = myObj.sprites.front_default;
-      document.getElementById('pokeDisplay').src = 'https://78.media.tumblr.com/d027bed6a01a7d355a3914fa451639c1/tumblr_n8wudzKShb1r8sc3ro1_500.gif ';
+      document.getElementById('pokeDisplay').src = 'https://78.media.tumblr.com/dbf1a4c9f90a4b01fad269a148ec3f91/tumblr_n8wz87I80l1qbmz7eo1_400.gif';
       document.getElementById("name").innerHTML = myObj.name;
       document.getElementById("hp").innerHTML = myObj.stats[5].base_stat;
       document.getElementById("attack").innerHTML = myObj.stats[4].base_stat;
@@ -137,4 +137,25 @@ function dhelmise() {
   };
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/781/", true);
   xhttp.send();
+}
+
+pokemon = {
+  volcanion: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/721/"
+  },
+  drapion: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/452/"
+  },
+  doublade: {
+    PokeLink: "https://pokeapi.co/api/v2/pokemon/680/"
+  },
+  carbink: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/703/"
+  },
+  archeops: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/567/"
+  },
+  dhelmise: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/781/"
+  }
 }
