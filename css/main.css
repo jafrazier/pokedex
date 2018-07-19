@@ -12,7 +12,6 @@ body {
   font-family: 'Dokdo', cursive;
   overflow: scroll;
 }
-
 .body{
   background:linear-gradient(to right, transparent -10%, black 110% ), url('https://pokewalls.files.wordpress.com/2018/03/721volcanion1920x1200.jpg');
   background-repeat: no-repeat;
@@ -131,7 +130,7 @@ button:active{
   text-align: center;
   color: rgba(246,8,0,0.5);
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   text-shadow: 2px 2px 1px rgba(0,0,0,.8);
   width: 200px;
   height: 200px;
