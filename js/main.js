@@ -20,7 +20,6 @@ pokemon = {
   drapion: {
     pokeLink: "https://pokeapi.co/api/v2/pokemon/452/",
     image: 'http://pa1.narvii.com/6219/09a1b603dcfa91664da8ea329e014baa1cb650cc_00.gif'
-
   },
   doublade: {
     PokeLink: "https://pokeapi.co/api/v2/pokemon/680/",
@@ -34,9 +33,29 @@ pokemon = {
     pokeLink: "https://pokeapi.co/api/v2/pokemon/567/",
     image: 'https://pa1.narvii.com/5743/481cc80e2d410b9a3bf146f4a0540d53336e96d5_hq.gif'
   },
-  dhelmise: {
-    pokeLink: "https://pokeapi.co/api/v2/pokemon/781/",
-    image: 'https://78.media.tumblr.com/2e024610186b5144ad69ef0eaac5e802/tumblr_ovpbktm2bH1rd4ymxo6_500.gif'
+  monferno: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/391/",
+    image: 'https://vignette.wikia.nocookie.net/degrassi/images/1/14/Monferno.gif/revision/latest?cb=20180109132555'
+  },
+  deoxys: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/386/",
+    image: 'http://pa1.narvii.com/6378/149c983a39670216e0f4cfda203d8b1ef75e4658_00.gif'
+  },
+  pangoro: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/675/",
+    image: 'https://pa1.narvii.com/6292/b5d761a427a1170d3203147040df81efcc46e792_hq.gif'
+  },
+  escavalier: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/589/",
+    image: 'https://pa1.narvii.com/6295/75cd9820860d9f684e170a04e028731ec68ab0a8_hq.gif'
+  },
+  golett: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/622/",
+    image: 'https://78.media.tumblr.com/16be0c0189b5879daddb725a920a3fe5/tumblr_mzb2y9rGvQ1qd87hlo1_500.gif'
+  },
+  xerneas: {
+    pokeLink: "https://pokeapi.co/api/v2/pokemon/716/",
+    image: 'https://pa1.narvii.com/6353/f9092d8f992b3143e813efd10df9b0b6fde13c40_hq.gif'
   }
 }
 function getPoke(name) {

@@ -185,3 +185,39 @@ button:active{
   background-position: center center;
   background-size: cover;
 }
+.monferno {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/b/b7/Ash_Monferno.png/250px-Ash_Monferno.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.deoxys {
+  background: url('https://vignette.wikia.nocookie.net/pokemon/images/6/65/Deoxys_Normal_Forme_anime.png/revision/latest?cb=20151017085026');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.pangoro {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/b/bc/Bourgain_Pangoro.png/250px-Bourgain_Pangoro.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.escavalier {
+  background: url('https://vignette.wikia.nocookie.net/pokemon/images/d/d2/Bianca_Escavalier.png/revision/latest?cb=20150916061102');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.golett {
+  background: url('https://vignette.wikia.nocookie.net/pokemon/images/d/d0/Kenton_Golett.png/revision/latest?cb=20160630034042');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.xerneas {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/d/d3/Xerneas_anime.png/250px-Xerneas_anime.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
