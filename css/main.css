@@ -12,6 +12,21 @@ body {
   font-family: 'Dokdo', cursive;
   overflow: scroll;
 }
+
+.body{
+  background:linear-gradient(to right, transparent -10%, black 110% ), url('https://pokewalls.files.wordpress.com/2018/03/721volcanion1920x1200.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.body2 {
+  background:linear-gradient(to right, transparent -10%, black 110% ), url('https://pokewalls.files.wordpress.com/2012/04/391monferno1920x1200.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .title{
   text-align: center;
   font-size:85px;

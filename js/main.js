@@ -1,7 +1,18 @@
 function playerName() {
   var name = prompt('hello trainer! what is your name?');
-  document.getElementById('trainer').innerHTML = name;
-  document.getElementById('player').classList.remove('hidden');
+  if (name == 'john') {
+    document.getElementById('player').classList.remove('hidden');
+    document.getElementById('player2').classList.add('hidden');
+    document.getElementById('body').classList.add('body');
+    document.getElementById('body').classList.remove('body2');
+    document.getElementById('trainer').innerHTML = name;
+  } if (name == 'jenn') {
+    document.getElementById('player2').classList.remove('hidden');
+    document.getElementById('player').classList.add('hidden');
+    document.getElementById('body').classList.add('body2');
+    document.getElementById('body').classList.remove('body');
+    document.getElementById('trainer').innerHTML = name;
+  }
 }
 clickCount = 0;
 function moreInfo() {
