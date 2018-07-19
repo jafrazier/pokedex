@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Pokedex</title>
 </head>
-<body id="body" class="">
+<body id="body">
   <h1 class="title">Pokedex</h1>
   <div id="pokedex" class="pokeImg">
     <div class="pokemon">
       <img id="pokeDisplay"src="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif" alt="pikachu">
     </div>
     <div class="pokeInfo">
-      <h3>Trainer: <span id="trainer"></span></h3>
+      <h3>Trainer: <span id="trainer">Default</span></h3>
       <h3>Name: <span id="name"></span> </h3>
       <p>HP: <span id="hp"></span></p>
       <p>Attack: <span id="attack"></span></p>
@@ -29,6 +29,28 @@
       </div>
 
 
+    </div>
+  </div>
+  <div id="default"class="playerPoke">
+    <div class="grid-container">
+      <div class="grid-item bulbasaur"onclick="getPoke('bulbasaur')"> <!--1-->
+        <p>Balbasaur</p>
+      </div>
+      <div class="grid-item charmander"onclick="getPoke('charmander')"> <!--4-->
+        <p>Charmander</p>
+      </div>
+      <div class="grid-item squirtle" onclick="getPoke('squirtle')"> <!--7-->
+        <p>Squirtle</p>
+      </div>
+      <div class="grid-item caterpie" onclick="getPoke('caterpie')"> <!--10-->
+        <p>Caterpie</p>
+      </div>
+      <div class="grid-item weedle" onclick="getPoke('weedle')"><!--13-->
+        <p>Weedle</p>
+      </div>
+      <div class="grid-item pidgey" onclick="getPoke('pidgey')">
+        <p>Pidgey</p>
+      </div>
     </div>
   </div>
   <div id="player"class="playerPoke hidden">

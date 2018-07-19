@@ -19,14 +19,12 @@ body {
   background-position: center center;
   background-size: cover;
 }
-
 .body2 {
   background:linear-gradient(to right, transparent -10%, black 110% ), url('https://pokewalls.files.wordpress.com/2012/04/391monferno1920x1200.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-
 .title{
   text-align: center;
   font-size:85px;
@@ -232,6 +230,42 @@ button:active{
 }
 .xerneas {
   background: url('https://cdn.bulbagarden.net/upload/thumb/d/d3/Xerneas_anime.png/250px-Xerneas_anime.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.bulbasaur {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/7/79/Shauna_Bulbasaur.png/250px-Shauna_Bulbasaur.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.charmander {
+  background: url('https://vignette.wikia.nocookie.net/es.pokemon/images/6/60/EP843_Charmander_de_Trovato.png/revision/latest?cb=20140816214242');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.squirtle {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/8/8c/Tierno_Squirtle.png/250px-Tierno_Squirtle.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.caterpie {
+  background: url('https://cdn.bulbagarden.net/upload/thumb/c/c5/Ash_Caterpie_M20.png/250px-Ash_Caterpie_M20.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.weedle {
+  background: url('https://vignette.wikia.nocookie.net/pokemon/images/1/19/Casey_Weedle.png/revision/latest?cb=20151026085155');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.pidgey {
+  background: url('https://vignette.wikia.nocookie.net/pokemon/images/2/29/Pidgey_IL001.png/revision/latest?cb=20151213045444');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
