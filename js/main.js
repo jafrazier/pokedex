@@ -130,16 +130,15 @@ pokemon = {
   },
 }
 function get(name) {
-  var something = name;
-  var somethingNew = pokemon[name];
-  var pokeimg = somethingNew['image'];
-  var final = somethingNew['pokeLink'];
+  var pokemonName = pokemon[name];
+  var pokeImg = pokemonName['image'];
+  var url = pokemonName['pokeLink'];
     var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           var myObj = JSON.parse(this.responseText);
           // document.getElementById('pokeDisplay').src = myObj.sprites.front_default;
-          document.getElementById('pokeDisplay').src = pokeimg;
+          document.getElementById('pokeDisplay').src = pokeImg;
           document.getElementById('name').innerHTML = myObj.name;
           document.getElementById('hp').innerHTML = myObj.stats[5].base_stat;
           document.getElementById('attack').innerHTML = myObj.stats[4].base_stat;
@@ -150,6 +149,6 @@ function get(name) {
           document.getElementById('accuuracy').innerHTML = myObj.name;
         }
       };
-      xhttp.open('GET', final, true);
+      xhttp.open('GET', url, true);
       xhttp.send();
   }

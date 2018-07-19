@@ -5,7 +5,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background:linear-gradient(to right, transparent -10%, black 110% ), url('https://wallpapercave.com/wp/cqhO8rQ.jpg');
+  background:linear-gradient(to left, transparent -10%, black 110% ), url('http://pre04.deviantart.net/ce19/th/pre/f/2013/039/d/e/bulbasaur_wallpaper_by_katie350l-d5u8lfo.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13,57 +13,38 @@ body {
   overflow: scroll;
 }
 .body{
-  background:linear-gradient(to right, transparent -10%, black 110% ), url('https://pokewalls.files.wordpress.com/2018/03/721volcanion1920x1200.jpg');
+  background: url('https://wallpapercave.com/wp/pvBpdD2.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .body2 {
-  background:linear-gradient(to right, transparent -10%, black 110% ), url('https://pokewalls.files.wordpress.com/2012/04/391monferno1920x1200.jpg');
+  background: url('http://celebwallpapers.net/wp-content/uploads/2017/12/epic-pokemon-wallpapers-hd-talk-pokemon-hd-wallpapers-beautiful-pokemon-wallpapers-hd.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-.title{
-  text-align: center;
-  font-size:85px;
-  color:rgba(246,8,0,0.9) ;
-  text-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 h3{
   margin-bottom: 10px;
 }
 .pokeImg {
-  width: 800px;
-  height: 600px;
-  margin-left: 50px;
-  margin-top: 50px;
-  opacity: .9;
-  background: url('https://astro.temple.edu/~tuf09411/Images/Pokedex2.png');
+  width: 500px;
+  height: 725px;
+  background: url('https://pre00.deviantart.net/10d8/th/pre/i/2015/298/9/6/pokedex_template_by_firedragonrem-d9eddon.png');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: fixed;
-  /* border: black 2px solid; */
-
-}
-.pokeInfo, .pokemon{
-  width: 281px;
-  margin-left: 253px;
-  border-radius: 7px;
+  background-position: center;
+  background-size: contain;
+  float: left;
 }
 .pokemon {
-  height: 206px;
-  margin-top: 42px;
-  position: fixed;
+  width: 65%;
+  height: 30%;
+  margin: 0 auto;
+  margin-top: 33%;
   text-align: center;
-  background: url('https://library.creativecow.net/articles/alkattan_omar/green_land/fig_12_green.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-position: cover;
-
 }
 .pokemon img {
+  border-radius: 7px;
   width: 100%;
   height: 100%;
   padding-top:;
@@ -71,21 +52,24 @@ h3{
 .pokepic{
   width: 100%;
   height: 100%;
-  border: black 1px solid;
 }
 .pokeInfo {
-  height: 199px;
+  width: 65%;
+  height:23.5%;
+  position: relative;
   font-family: 'Press Start 2P', cursive;
   font-size: 13px;
-  margin-top: 355px;
-  position: fixed;
+  margin: 0 auto;
+  margin-top: 10px;
   overflow: scroll;
   overflow-y: scroll;
-  padding: 4px;
   text-transform: uppercase;
 }
 .pokeInfo p {
   margin-top: 10px;
+}
+#more {
+  transition: display 2s;
 }
 button {
  width: 125px;
@@ -105,10 +89,9 @@ button:active{
   box-shadow: none;
 }
 .playerPoke{
-  width: 505px;
-  height: 605px;
-  position: fixed;
-  margin-left: 900px;
+  width: 60%;
+  height: auto;
+  float: right;
   text-align: center;
 }
 .playerPoke h2{
@@ -117,36 +100,36 @@ button:active{
 }
 .grid-container {
   display: grid;
-  width: 500px;
-  height: 600px;
+  width: 50%;
   grid-template-columns: auto auto;
   text-align: center;
-
 }
 .grid-item {
   border: 4px solid #BFBFBF;
   border-radius: 50%;
-  transition: border-radius 1s;
+  transition: border-radius 1s, font-size 2s,opacity 2s;
+  opacity: .8;
   text-align: center;
   color: rgba(246,8,0,0.5);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   text-shadow: 2px 2px 1px rgba(0,0,0,.8);
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px ;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 .grid-item img {
 }
 .grid-item p {
-  margin-top: 145px;
+  margin-top: 100px;
 }
 .grid-item:hover {
-  width: 220px;
-  height: 220px;
-  font-size: 45px;
+  width: 175px;
+  height: 175px;
+  font-size: 35px;
   color: rgba(246,8,0,0.9);
+  opacity: 1;
   border-radius: 7px;
   box-shadow: 5px 5px 5px rgba(255,255,255,.5);
 
