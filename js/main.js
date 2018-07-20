@@ -69,7 +69,7 @@ pokemon = {
     image: 'http://pa1.narvii.com/6219/09a1b603dcfa91664da8ea329e014baa1cb650cc_00.gif'
   },
   doublade: {
-    PokeLink: 'https://pokeapi.co/api/v2/pokemon/680/',
+    pokeLink: 'https://pokeapi.co/api/v2/pokemon/680/',
     image: 'https://thumbs.gfycat.com/ReadyFelineEyelashpitviper-size_restricted.gif'
   },
   carbink: {
@@ -163,12 +163,10 @@ function test() {
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         var myPoke = JSON.parse(this.responseText);
-        document.getElementById('ashPoke').innerHTML= myPoke.name;
-        document.getElementById('pokewindow').src= myPoke.sprites.front_shiny;
-
+        document.getElementById('ashPoke').innerHTML= myPoke.name +' !!';
+        document.getElementById('pokewindow').src= myPoke.sprites.front_default;
       }
     };
     xhttp.open('GET', showMyPoke, true);
     xhttp.send();
-
 }
