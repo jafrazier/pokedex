@@ -80,6 +80,10 @@ pokemon = {
     pokeLink: 'https://pokeapi.co/api/v2/pokemon/567/',
     image: 'https://pa1.narvii.com/5743/481cc80e2d410b9a3bf146f4a0540d53336e96d5_hq.gif'
   },
+  dhelmise: {
+    pokeLink: 'https://pokeapi.co/api/v2/pokemon/781/',
+    image: 'https://78.media.tumblr.com/2e024610186b5144ad69ef0eaac5e802/tumblr_ovpbktm2bH1rd4ymxo6_500.gif'
+  },
   monferno: {
     pokeLink: 'https://pokeapi.co/api/v2/pokemon/391/',
     image: 'https://vignette.wikia.nocookie.net/degrassi/images/1/14/Monferno.gif/revision/latest?cb=20180109132555'
@@ -152,3 +156,19 @@ function get(name) {
       xhttp.open('GET', url, true);
       xhttp.send();
   }
+function test() {
+  var pokeNum = prompt('choose a pokemon number');
+  var showMyPoke = 'https://pokeapi.co/api/v2/pokemon/' + pokeNum +'/'
+  var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var myPoke = JSON.parse(this.responseText);
+        document.getElementById('ashPoke').innerHTML= myPoke.name;
+        document.getElementById('pokewindow').src= myPoke.sprites.front_shiny;
+
+      }
+    };
+    xhttp.open('GET', showMyPoke, true);
+    xhttp.send();
+
+}

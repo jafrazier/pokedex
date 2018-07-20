@@ -5,7 +5,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background:linear-gradient(to left, transparent -10%, black 110% ), url('http://pre04.deviantart.net/ce19/th/pre/f/2013/039/d/e/bulbasaur_wallpaper_by_katie350l-d5u8lfo.jpg');
+  background: url('https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -29,34 +29,33 @@ h3{
 }
 .pokeImg {
   width: 500px;
-  height: 725px;
+  height: 100%;
+  display: inline-block;
   background: url('https://pre00.deviantart.net/10d8/th/pre/i/2015/298/9/6/pokedex_template_by_firedragonrem-d9eddon.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  float: left;
+  clear: both;
 }
 .pokemon {
-  width: 65%;
+  width: 72%;
   height: 30%;
   margin: 0 auto;
-  margin-top: 33%;
+  margin-top: 36%;
   text-align: center;
 }
 .pokemon img {
   border-radius: 7px;
   width: 100%;
   height: 100%;
-  padding-top:;
 }
 .pokepic{
   width: 100%;
   height: 100%;
 }
 .pokeInfo {
-  width: 65%;
+  width: 70%;
   height:23.5%;
-  position: relative;
   font-family: 'Press Start 2P', cursive;
   font-size: 13px;
   margin: 0 auto;
@@ -68,11 +67,8 @@ h3{
 .pokeInfo p {
   margin-top: 10px;
 }
-#more {
-  transition: display 2s;
-}
 button {
- width: 125px;
+ width: 30%;
  font-size: 12px;
  padding: 2px;
  border-radius: 7px;
@@ -89,10 +85,11 @@ button:active{
   box-shadow: none;
 }
 .playerPoke{
-  width: 60%;
-  height: auto;
-  float: right;
-  text-align: center;
+  display: block;
+  width: 215px;
+  height: 90%;
+  overflow: scroll;
+  float: left;
 }
 .playerPoke h2{
   margin: 10px 0;
@@ -100,33 +97,28 @@ button:active{
 }
 .grid-container {
   display: grid;
-  width: 50%;
-  grid-template-columns: auto auto;
+  /* width: 75%; */
+  grid-template-columns: auto;
   text-align: center;
 }
 .grid-item {
   border: 4px solid #BFBFBF;
   border-radius: 50%;
   transition: border-radius 1s, font-size 2s,opacity 2s;
-  opacity: .8;
   text-align: center;
   color: rgba(246,8,0,0.5);
   font-weight: bold;
   font-size: 25px;
+  margin-bottom: 15px;
   text-shadow: 2px 2px 1px rgba(0,0,0,.8);
   width: 150px;
-  height: 150px ;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-.grid-item img {
+  height: 150px;
 }
 .grid-item p {
   margin-top: 100px;
 }
 .grid-item:hover {
-  width: 175px;
-  height: 175px;
+  width: 200px;
   font-size: 35px;
   color: rgba(246,8,0,0.9);
   opacity: 1;

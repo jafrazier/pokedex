@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/ash.css">
   <title>Pokedex</title>
 </head>
 <body id="body">
@@ -22,6 +23,7 @@
       <p>Abilities: <span id="abilities"></span></p>
       <button onclick="moreInfo()" class="moreInfo">More Info</button>
       <button onclick="playerName()" class="player">Sign In</button>
+      <button onclick="test()">Pokemon</button>
       <div id="more" class="hidden">
         <p>Priority: <span id="priority"></span></p>
         <p>Power: <span id="power"></span></p>
@@ -94,6 +96,20 @@
       </div>
       <div class="grid-item xerneas" onclick="get('xerneas')"> <!--716-->
         <p>Xerneas</p>
+      </div>
+    </div>
+  </div>
+  <div class="ash">
+    <img src="https://vignette.wikia.nocookie.net/pokemon/images/8/8f/DPash.png/revision/latest?cb=20110507193220" alt="">
+    <div class="side">
+      <div class="ashSaid">
+        <div class="ichoose">
+          <p>I choose you</p>
+          <p id="ashPoke">Pikachu</p>
+        </div>
+      </div>
+      <div class="chosenPoke">
+        <img id="pokewindow" src="https://static.giantbomb.com/uploads/scale_small/0/6087/2438704-1202149925_t.png" alt="">
       </div>
     </div>
   </div>
