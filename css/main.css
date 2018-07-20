@@ -274,7 +274,7 @@ button:active{
   font-size: 45px;
   text-align: center;
   margin:0 auto;
-  margin-top: 15%;
+  margin-top: -3%;
   border-radius: 50%;
   transition: all 1s ease;
   background: url('https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG');
@@ -300,7 +300,12 @@ button:active{
 .welcomeBtn h2 {
   margin-top: 75px;
   font-family: sans-serif;
-  color: rgb(214, 214, 214);
-  text-shadow: 5px 5px 5px rgba(0,0,0,.9);
+  color: rgb(255,205,0);
+  text-shadow: 2px 2px 1px rgb(40,104,184);
 
+}
+
+#welcome img {
+  width: 1000px;
+  margin-left:15%;
 }
