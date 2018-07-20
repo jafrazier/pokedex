@@ -1,6 +1,9 @@
-function playerName() {
+function playerLogin() {
   var name = prompt('hello trainer! what is your name?');
   if (name === 'john') {
+    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
+    document.getElementById('pokewindow').classList.remove('moving');
+    document.getElementById('ashPoke').innerHTML = '';
     document.getElementById('default').classList.add('hidden');
     document.getElementById('player').classList.remove('hidden');
     document.getElementById('player2').classList.add('hidden');
@@ -17,6 +20,9 @@ function playerName() {
     document.getElementById('power').innerHTML = '';
     document.getElementById('accuuracy').innerHTML = '';
   } if (name === 'jenn') {
+    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
+    document.getElementById('pokewindow').classList.remove('moving');
+    document.getElementById('ashPoke').innerHTML = '';
     document.getElementById('default').classList.add('hidden');
     document.getElementById('player2').classList.remove('hidden');
     document.getElementById('player').classList.add('hidden');
@@ -33,6 +39,9 @@ function playerName() {
     document.getElementById('power').innerHTML = '';
     document.getElementById('accuuracy').innerHTML = '';
   } if (name !== 'jenn' && name !== 'john') {
+    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
+    document.getElementById('pokewindow').classList.remove('moving');
+    document.getElementById('ashPoke').innerHTML = '';
     document.getElementById('default').classList.remove('hidden');
     document.getElementById('player').classList.add('hidden');
     document.getElementById('player2').classList.add('hidden');
@@ -156,7 +165,7 @@ function get(name) {
       xhttp.open('GET', url, true);
       xhttp.send();
   }
-function test() {
+function displayAshPoke() {
   var pokeNum = prompt('choose a pokemon number');
   var showMyPoke = 'https://pokeapi.co/api/v2/pokemon/' + pokeNum +'/'
   var xhttp = new XMLHttpRequest();
@@ -165,6 +174,7 @@ function test() {
         var myPoke = JSON.parse(this.responseText);
         document.getElementById('ashPoke').innerHTML= myPoke.name +' !!';
         document.getElementById('pokewindow').src= myPoke.sprites.front_default;
+        document.getElementById('pokewindow').classList.add('moving');
       }
     };
     xhttp.open('GET', showMyPoke, true);
