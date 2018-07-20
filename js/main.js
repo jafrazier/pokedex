@@ -1,6 +1,11 @@
+function welcomButton() {
+  document.getElementById('welcome').classList.add('hidden');
+  document.getElementById('welcomeBg').classList.add('hidden');
+}
 function playerLogin() {
   var name = prompt('hello trainer! what is your name?');
   if (name === 'john') {
+    document.getElementById('pokeSide').classList.remove('hidden');
     document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
     document.getElementById('pokewindow').classList.remove('moving');
     document.getElementById('ashPoke').innerHTML = '';
@@ -20,6 +25,7 @@ function playerLogin() {
     document.getElementById('power').innerHTML = '';
     document.getElementById('accuuracy').innerHTML = '';
   } if (name === 'jenn') {
+    document.getElementById('pokeSide').classList.remove('hidden');
     document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
     document.getElementById('pokewindow').classList.remove('moving');
     document.getElementById('ashPoke').innerHTML = '';
@@ -39,6 +45,7 @@ function playerLogin() {
     document.getElementById('power').innerHTML = '';
     document.getElementById('accuuracy').innerHTML = '';
   } if (name !== 'jenn' && name !== 'john') {
+    document.getElementById('pokeSide').classList.remove('hidden');
     document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
     document.getElementById('pokewindow').classList.remove('moving');
     document.getElementById('ashPoke').innerHTML = '';
@@ -172,7 +179,7 @@ function displayAshPoke() {
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         var myPoke = JSON.parse(this.responseText);
-        document.getElementById('ashPoke').innerHTML= myPoke.name +' !!';
+        document.getElementById('ashPoke').innerHTML= myPoke.name;
         document.getElementById('pokewindow').src= myPoke.sprites.front_default;
         document.getElementById('pokewindow').classList.add('moving');
       }

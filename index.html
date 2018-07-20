@@ -10,9 +10,17 @@
   <title>Pokedex</title>
 </head>
 <body id="body">
+  <div id="welcomeBg" >
+
+  </div>
+  <div id="welcome">
+      <div class="welcomeBtn" onclick="welcomButton()">
+        <h2>Welcome trainer</h2>
+      </div>
+  </div>
   <div id="pokedex" class="pokeImg">
     <div class="pokemon">
-        <img id="pokeDisplay"src="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif" alt="pikachu">
+      <img id="pokeDisplay" src="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif" alt="pikachu">
     </div>
     <div class="pokeInfo">
       <h3>Trainer: <span id="trainer">Default</span></h3>
@@ -33,69 +41,82 @@
 
     </div>
   </div>
-  <div id="default"class="playerPoke">
-    <div class="grid-container">
-      <div class="grid-item bulbasaur"onclick="get('bulbasaur')"> <!--1-->
-        <p>Balbasaur</p>
-      </div>
-      <div class="grid-item charmander"onclick="get('charmander')"> <!--4-->
-        <p>Charmander</p>
-      </div>
-      <div class="grid-item squirtle" onclick="get('squirtle')"> <!--7-->
-        <p>Squirtle</p>
-      </div>
-      <div class="grid-item caterpie" onclick="get('caterpie')"> <!--10-->
-        <p>Caterpie</p>
-      </div>
-      <div class="grid-item weedle" onclick="get('weedle')"><!--13-->
-        <p>Weedle</p>
-      </div>
-      <div class="grid-item pidgey" onclick="get('pidgey')">
-        <p>Pidgey</p>
-      </div>
-    </div>
-  </div>
-  <div id="player"class="playerPoke hidden">
-    <div class="grid-container">
-      <div class="grid-item volcanion"onclick="get('volcanion')">
-        <p>Volcanion</p>
-      </div>
-      <div class="grid-item drapion"onclick="get('drapion')">
-        <p>Drapion</p>
-      </div>
-      <div class="grid-item doublade" onclick="get('doublade')">
-        <p>Doublabe</p>
-      </div>
-      <div class="grid-item carbink" onclick="get('carbink')">
-        <p>Carbink</p>
-      </div>
-      <div class="grid-item archeops" onclick="get('archeops')">
-        <p>Archeops</p>
-      </div>
-      <div class="grid-item dhelmise" onclick="get('dhelmise')">
-        <p>Dhelmise</p>
+  <div id='pokeSide' class="hidden">
+    <div id="default" class="playerPoke">
+      <div class="grid-container">
+        <div class="grid-item bulbasaur" onclick="get('bulbasaur')">
+          <!--1-->
+          <p>Balbasaur</p>
+        </div>
+        <div class="grid-item charmander" onclick="get('charmander')">
+          <!--4-->
+          <p>Charmander</p>
+        </div>
+        <div class="grid-item squirtle" onclick="get('squirtle')">
+          <!--7-->
+          <p>Squirtle</p>
+        </div>
+        <div class="grid-item caterpie" onclick="get('caterpie')">
+          <!--10-->
+          <p>Caterpie</p>
+        </div>
+        <div class="grid-item weedle" onclick="get('weedle')">
+          <!--13-->
+          <p>Weedle</p>
+        </div>
+        <div class="grid-item pidgey" onclick="get('pidgey')">
+          <p>Pidgey</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="player2"class="playerPoke hidden">
-    <div class="grid-container">
-      <div class="grid-item monferno"onclick="get('monferno')"> <!--391-->
-        <p>Monferno</p>
+    <div id="player" class="playerPoke hidden">
+      <div class="grid-container">
+        <div class="grid-item volcanion" onclick="get('volcanion')">
+          <p>Volcanion</p>
+        </div>
+        <div class="grid-item drapion" onclick="get('drapion')">
+          <p>Drapion</p>
+        </div>
+        <div class="grid-item doublade" onclick="get('doublade')">
+          <p>Doublabe</p>
+        </div>
+        <div class="grid-item carbink" onclick="get('carbink')">
+          <p>Carbink</p>
+        </div>
+        <div class="grid-item archeops" onclick="get('archeops')">
+          <p>Archeops</p>
+        </div>
+        <div class="grid-item dhelmise" onclick="get('dhelmise')">
+          <p>Dhelmise</p>
+        </div>
       </div>
-      <div class="grid-item deoxys"onclick="get('deoxys')"> <!--386-->
-        <p>Deoxys</p>
-      </div>
-      <div class="grid-item pangoro" onclick="get('pangoro')"> <!--675-->
-        <p>Pangoro</p>
-      </div>
-      <div class="grid-item escavalier" onclick="get('escavalier')"> <!--589--->
-        <p>Escavalier</p>
-      </div>
-      <div class="grid-item golett" onclick="get('golett')"> <!--622-->
-        <p>Golett</p>
-      </div>
-      <div class="grid-item xerneas" onclick="get('xerneas')"> <!--716-->
-        <p>Xerneas</p>
+    </div>
+    <div id="player2" class="playerPoke hidden">
+      <div class="grid-container">
+        <div class="grid-item monferno" onclick="get('monferno')">
+          <!--391-->
+          <p>Monferno</p>
+        </div>
+        <div class="grid-item deoxys" onclick="get('deoxys')">
+          <!--386-->
+          <p>Deoxys</p>
+        </div>
+        <div class="grid-item pangoro" onclick="get('pangoro')">
+          <!--675-->
+          <p>Pangoro</p>
+        </div>
+        <div class="grid-item escavalier" onclick="get('escavalier')">
+          <!--589--->
+          <p>Escavalier</p>
+        </div>
+        <div class="grid-item golett" onclick="get('golett')">
+          <!--622-->
+          <p>Golett</p>
+        </div>
+        <div class="grid-item xerneas" onclick="get('xerneas')">
+          <!--716-->
+          <p>Xerneas</p>
+        </div>
       </div>
     </div>
   </div>

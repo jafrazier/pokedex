@@ -1,13 +1,19 @@
 .ash {
   float: right;
   font-family: "Press Start 2P", cursive;
-  background: rgba(0, 0, 0, 0.5);
+  background: url("https://cdn.dribbble.com/users/688785/screenshots/4407569/grass.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 10px;
-  border: rgba(255, 255, 255, 0.5) 5px solid;
+  border: rgba(255, 255, 255, 0.8) 5px solid;
   border-radius: 10px;
-  margin-top: 10px; }
+  margin: 10px 10px 0 0;
+  height: 90%;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.5); }
 
 .ash img {
+  padding-top: 78px;
   height: 550px; }
 
 .side {
@@ -16,7 +22,7 @@
   display: inline-block; }
 
 .ashSaid {
-  width: 100%;
+  width: 170%;
   height: 300px;
   float: right;
   background: url("http://weclipart.com/gimg/E6A7D41B98699C2E/comic-tag-tag2.svg");
@@ -39,15 +45,21 @@
   80% {
     transform: translate(-10px, 0); } }
 .ichoose {
-  width: 155px;
-  padding-top: 90px;
+  width: 280px;
+  padding-left: 35px;
+  padding-top: 52px;
   text-align: center;
-  font-size: 12px; }
+  font-size: 16px; }
 
 .ichoose p {
-  margin-bottom: 10px; }
+  margin-bottom: 30px; }
 
 #pokewindow {
-  height: 250px; }
+  height: 100%;
+  width: 100%; }
+
+#ashPoke {
+  font-size: 18px;
+  color: red; }
 
 /*# sourceMappingURL=ash.css.map */
