@@ -81,6 +81,7 @@ button {
  box-shadow: 3px 3px 5px rgba(0,0,0,.8);
 }
 button:hover {
+  padding: 12px 5px;
   background:rgba(255,255,255,.5);
 }
 button:active{
@@ -270,32 +271,36 @@ button:active{
   padding: 15px;
   width: 300px;
   height: 300px;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   margin:0 auto;
   margin-top: 15%;
   border-radius: 50%;
+  transition: all 1s ease;
   background: url('https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
   box-shadow: 5px 5px 10px rgba(255,255,255,.4);
-  border: white 2px solid;
 }
 .welcomeBtn:hover{
-  width: 310px;
-  height: 310px;
-  font-size: 53px;
+  transform: rotateZ(360deg);
+  width: 320px;
+  height: 320px;
+  font-size: 50px;
   box-shadow: 10px 10px 10px rgba(255,255,255,.4);
 }
 .welcomeBtn:active {
   box-shadow: none;
   width: 290px;
   height: 290px;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .welcomeBtn h2 {
   margin-top: 75px;
+  font-family: sans-serif;
+  color: rgb(214, 214, 214);
+  text-shadow: 5px 5px 5px rgba(0,0,0,.9);
 
 }
