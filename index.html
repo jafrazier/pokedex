@@ -11,7 +11,7 @@
 </head>
 <body id="body">
   <div id="welcomeBg" >
-    
+
 
   </div>
   <div id="welcome">
@@ -132,9 +132,16 @@
         </div>
       </div>
       <div id="chosenPoke">
-        <img id="pokewindow" src="https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png" alt="">
+        <img id="pokewindow" src="https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png" alt="" onclick="getExtraInfo()">
       </div>
     </div>
+  </div>
+  <div id="pokePopUp" class="hidden">
+    <h3>Name: <span id="name2"></span> </h3>
+    <p>HP: <span id="hp2"></span></p>
+    <p>Attack: <span id="attack2"></span></p>
+    <p>Defence: <span id="defence2"></span></p>
+    <p>Abilities: <span id="abilities2"></span></p>
   </div>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

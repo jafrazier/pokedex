@@ -1,80 +1,5 @@
-function welcomButton() {
-  document.getElementById('welcome').classList.add('hidden');
-  document.getElementById('welcomeBg').classList.add('hidden');
-}
-function playerLogin() {
-  var name = prompt('hello trainer! what is your name?');
-  if (name === 'john') {
-    document.getElementById('pokeSide').classList.remove('hidden');
-    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
-    document.getElementById('pokewindow').classList.remove('moving');
-    document.getElementById('ashPoke').innerHTML = '';
-    document.getElementById('default').classList.add('hidden');
-    document.getElementById('player').classList.remove('hidden');
-    document.getElementById('player2').classList.add('hidden');
-    document.getElementById('body').classList.add('body');
-    document.getElementById('body').classList.remove('body2');
-    document.getElementById('trainer').innerHTML = name;
-    document.getElementById('pokeDisplay').src ="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif";
-    document.getElementById('name').innerHTML = '';
-    document.getElementById('hp').innerHTML = '';
-    document.getElementById('attack').innerHTML = '';
-    document.getElementById('defence').innerHTML = '';
-    document.getElementById('abilities').innerHTML = '';
-    document.getElementById('priority').innerHTML = '';
-    document.getElementById('power').innerHTML = '';
-    document.getElementById('accuuracy').innerHTML = '';
-  } if (name === 'jenn') {
-    document.getElementById('pokeSide').classList.remove('hidden');
-    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
-    document.getElementById('pokewindow').classList.remove('moving');
-    document.getElementById('ashPoke').innerHTML = '';
-    document.getElementById('default').classList.add('hidden');
-    document.getElementById('player2').classList.remove('hidden');
-    document.getElementById('player').classList.add('hidden');
-    document.getElementById('body').classList.add('body2');
-    document.getElementById('body').classList.remove('body');
-    document.getElementById('trainer').innerHTML = name;
-    document.getElementById('pokeDisplay').src ="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif";
-    document.getElementById('name').innerHTML = '';
-    document.getElementById('hp').innerHTML = '';
-    document.getElementById('attack').innerHTML = '';
-    document.getElementById('defence').innerHTML = '';
-    document.getElementById('abilities').innerHTML = '';
-    document.getElementById('priority').innerHTML = '';
-    document.getElementById('power').innerHTML = '';
-    document.getElementById('accuuracy').innerHTML = '';
-  } if (name !== 'jenn' && name !== 'john') {
-    document.getElementById('pokeSide').classList.remove('hidden');
-    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
-    document.getElementById('pokewindow').classList.remove('moving');
-    document.getElementById('ashPoke').innerHTML = '';
-    document.getElementById('default').classList.remove('hidden');
-    document.getElementById('player').classList.add('hidden');
-    document.getElementById('player2').classList.add('hidden');
-    document.getElementById('body').classList.remove('body');
-    document.getElementById('body').classList.remove('body2');
-    document.getElementById('trainer').innerHTML = name;
-    document.getElementById('pokeDisplay').src ="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif";
-    document.getElementById('name').innerHTML = '';
-    document.getElementById('hp').innerHTML = '';
-    document.getElementById('attack').innerHTML = '';
-    document.getElementById('defence').innerHTML = '';
-    document.getElementById('abilities').innerHTML = '';
-    document.getElementById('priority').innerHTML = '';
-    document.getElementById('power').innerHTML = '';
-    document.getElementById('accuuracy').innerHTML = '';
-  }
-}
+extraClick = 0;
 clickCount = 0;
-function moreInfo() {
-  clickCount += 1;
-  if (clickCount % 2 == 0) {
-    document.getElementById('more').classList.add('hidden');
-  }else {
-    document.getElementById('more').classList.remove('hidden');
-  }
-}
 pokemon = {
   volcanion: {
     pokeLink: 'https://pokeapi.co/api/v2/pokemon/721/',
@@ -149,6 +74,103 @@ pokemon = {
     image: 'http://gifimage.net/wp-content/uploads/2018/04/pidgey-gif-6.gif'
   },
 }
+function welcomButton() {
+  document.getElementById('welcome').classList.add('hidden');
+  document.getElementById('welcomeBg').classList.add('hidden');
+}
+function playerLogin() {
+  var name = prompt('hello trainer! what is your name?');
+  if (name === 'john') {
+    document.getElementById('pokeSide').classList.remove('hidden');
+    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
+    document.getElementById('pokewindow').classList.remove('moving');
+    document.getElementById('ashPoke').innerHTML = '';
+    document.getElementById('default').classList.add('hidden');
+    document.getElementById('player').classList.remove('hidden');
+    document.getElementById('player2').classList.add('hidden');
+    document.getElementById('body').classList.add('body');
+    document.getElementById('body').classList.remove('body2');
+    document.getElementById('trainer').innerHTML = name;
+    document.getElementById('pokeDisplay').src ="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif";
+    document.getElementById('name').innerHTML = '';
+    document.getElementById('hp').innerHTML = '';
+    document.getElementById('attack').innerHTML = '';
+    document.getElementById('defence').innerHTML = '';
+    document.getElementById('abilities').innerHTML = '';
+    document.getElementById('priority').innerHTML = '';
+    document.getElementById('power').innerHTML = '';
+    document.getElementById('accuuracy').innerHTML = '';
+    document.getElementById('name2').innerHTML = '';
+    document.getElementById('hp2').innerHTML = '';
+    document.getElementById('attack2').innerHTML = '';
+    document.getElementById('defence2').innerHTML = '';
+    document.getElementById('abilities2').innerHTML = '';
+    document.getElementById('pokePopUp').classList.add('hidden');
+    extraClick = 0;
+  } if (name === 'jenn') {
+    document.getElementById('pokeSide').classList.remove('hidden');
+    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
+    document.getElementById('pokewindow').classList.remove('moving');
+    document.getElementById('ashPoke').innerHTML = '';
+    document.getElementById('default').classList.add('hidden');
+    document.getElementById('player2').classList.remove('hidden');
+    document.getElementById('player').classList.add('hidden');
+    document.getElementById('body').classList.add('body2');
+    document.getElementById('body').classList.remove('body');
+    document.getElementById('trainer').innerHTML = name;
+    document.getElementById('pokeDisplay').src ="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif";
+    document.getElementById('name').innerHTML = '';
+    document.getElementById('hp').innerHTML = '';
+    document.getElementById('attack').innerHTML = '';
+    document.getElementById('defence').innerHTML = '';
+    document.getElementById('abilities').innerHTML = '';
+    document.getElementById('priority').innerHTML = '';
+    document.getElementById('power').innerHTML = '';
+    document.getElementById('accuuracy').innerHTML = '';
+    document.getElementById('name2').innerHTML = '';
+    document.getElementById('hp2').innerHTML = '';
+    document.getElementById('attack2').innerHTML = '';
+    document.getElementById('defence2').innerHTML = '';
+    document.getElementById('abilities2').innerHTML = '';
+    document.getElementById('pokePopUp').classList.add('hidden');
+    extraClick = 0;
+  } if (name !== 'jenn' && name !== 'john') {
+    document.getElementById('pokeSide').classList.remove('hidden');
+    document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
+    document.getElementById('pokewindow').classList.remove('moving');
+    document.getElementById('ashPoke').innerHTML = '';
+    document.getElementById('default').classList.remove('hidden');
+    document.getElementById('player').classList.add('hidden');
+    document.getElementById('player2').classList.add('hidden');
+    document.getElementById('body').classList.remove('body');
+    document.getElementById('body').classList.remove('body2');
+    document.getElementById('trainer').innerHTML = name;
+    document.getElementById('pokeDisplay').src ="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif";
+    document.getElementById('name').innerHTML = '';
+    document.getElementById('hp').innerHTML = '';
+    document.getElementById('attack').innerHTML = '';
+    document.getElementById('defence').innerHTML = '';
+    document.getElementById('abilities').innerHTML = '';
+    document.getElementById('priority').innerHTML = '';
+    document.getElementById('power').innerHTML = '';
+    document.getElementById('accuuracy').innerHTML = '';
+    document.getElementById('name2').innerHTML = '';
+    document.getElementById('hp2').innerHTML = '';
+    document.getElementById('attack2').innerHTML = '';
+    document.getElementById('defence2').innerHTML = '';
+    document.getElementById('abilities2').innerHTML = '';
+    document.getElementById('pokePopUp').classList.add('hidden');
+    extraClick = 0;
+  }
+}
+function moreInfo() {
+  clickCount += 1;
+  if (clickCount % 2 == 0) {
+    document.getElementById('more').classList.add('hidden');
+  }else {
+    document.getElementById('more').classList.remove('hidden');
+  }
+}
 function get(name) {
   var pokemonName = pokemon[name];
   var pokeImg = pokemonName['image'];
@@ -182,8 +204,26 @@ function displayAshPoke() {
         document.getElementById('ashPoke').innerHTML= myPoke.name;
         document.getElementById('pokewindow').src= myPoke.sprites.front_default;
         document.getElementById('pokewindow').classList.add('moving');
+        document.getElementById('name2').innerHTML = myPoke.name;
+        document.getElementById('hp2').innerHTML = myPoke.stats[5].base_stat;
+        document.getElementById('attack2').innerHTML = myPoke.stats[4].base_stat;
+        document.getElementById('defence2').innerHTML = myPoke.stats[3].base_stat;
+        document.getElementById('abilities2').innerHTML = myPoke.abilities[0].ability['name'];
+        document.getElementById('pokePopUp').classList.add('hidden');
+        extraClick = 0;
+
+
+
       }
     };
     xhttp.open('GET', showMyPoke, true);
     xhttp.send();
+}
+function getExtraInfo() {
+  extraClick += 1;
+  if(extraClick % 2 == 0) {
+    document.getElementById('pokePopUp').classList.add('hidden');
+  } else {
+    document.getElementById('pokePopUp').classList.remove('hidden');
+  }
 }

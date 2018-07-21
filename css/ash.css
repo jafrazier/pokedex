@@ -11,16 +11,13 @@
   margin: 10px 10px 0 0;
   height: 90%;
   box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.5); }
-
 .ash img {
   padding-top: 78px;
   height: 550px; }
-
 .side {
   width: 300px;
   height: 550px;
   display: inline-block; }
-
 .ashSaid {
   width: 170%;
   height: 300px;
@@ -30,15 +27,12 @@
   background-position: center;
   background-size: 53%;
   padding-left: 100px; }
-
 #chosenPoke {
   width: 100%;
   height: 350px;
   clear: both; }
-
 .moving {
   animation: move 1s linear infinite alternate; }
-
 @keyframes move {
   50% {
     transform: translate(10px, 0); }
@@ -50,16 +44,12 @@
   padding-top: 52px;
   text-align: center;
   font-size: 16px; }
-
 .ichoose p {
   margin-bottom: 30px; }
-
 #pokewindow {
   height: 100%;
   width: 100%; }
-
 #ashPoke {
   font-size: 18px;
   color: red; }
-
 /*# sourceMappingURL=ash.css.map */

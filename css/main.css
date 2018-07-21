@@ -134,8 +134,7 @@ button:active{
 
 }
 .grid-item:active {
-  width: 200px;
-  height: 200px;
+  width: 190px;
   box-shadow: none;
 }
 .hidden {
@@ -296,16 +295,33 @@ button:active{
   height: 290px;
   font-size: 40px;
 }
-
 .welcomeBtn h2 {
   margin-top: 75px;
   font-family: sans-serif;
   color: rgb(255,205,0);
-  text-shadow: 2px 2px 1px rgb(40,104,184);
+  text-shadow: 1px px 1px rgb(40,104,184);
 
 }
-
 #welcome img {
   width: 1000px;
   margin-left:15%;
+}
+#pokePopUp {
+  border: rgba(255, 255, 255, 0.8) 5px solid;
+  width: 390px;
+  height: 165px;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  top: 29%;
+  left: 70%;
+  border-radius: 10px;
+  background-color: rgba(186,242,250,.7);
+  box-shadow: 5px 5px 2px rgba(0,0,0,.6);
+  font-size: 17px;
+  padding: 5px;
+  overflow: scroll;
+  text-transform: uppercase;
+}
+#pokePopUp p {
+  margin-bottom: 15px;
 }
