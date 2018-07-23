@@ -325,3 +325,8 @@ button:active{
 #pokePopUp p {
   margin-bottom: 15px;
 }
+#clickMe {
+  padding-left: 65px;
+  position: absolute;
+  top:400px;
+}

@@ -81,6 +81,8 @@ function welcomButton() {
 function playerLogin() {
   var name = prompt('hello trainer! what is your name?');
   if (name === 'john') {
+    document.getElementById('clickMe').classList.add('hidden');
+    document.getElementById('displayedPoke').classList.remove('hidden');
     document.getElementById('pokeSide').classList.remove('hidden');
     document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
     document.getElementById('pokewindow').classList.remove('moving');
@@ -108,6 +110,8 @@ function playerLogin() {
     document.getElementById('pokePopUp').classList.add('hidden');
     extraClick = 0;
   } if (name === 'jenn') {
+    document.getElementById('clickMe').classList.add('hidden');
+    document.getElementById('displayedPoke').classList.remove('hidden');
     document.getElementById('pokeSide').classList.remove('hidden');
     document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
     document.getElementById('pokewindow').classList.remove('moving');
@@ -135,6 +139,8 @@ function playerLogin() {
     document.getElementById('pokePopUp').classList.add('hidden');
     extraClick = 0;
   } if (name !== 'jenn' && name !== 'john') {
+    document.getElementById('clickMe').classList.add('hidden');
+    document.getElementById('displayedPoke').classList.remove('hidden');
     document.getElementById('pokeSide').classList.remove('hidden');
     document.getElementById('pokewindow').src ='https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png';
     document.getElementById('pokewindow').classList.remove('moving');
@@ -210,10 +216,8 @@ function displayAshPoke() {
         document.getElementById('defence2').innerHTML = myPoke.stats[3].base_stat;
         document.getElementById('abilities2').innerHTML = myPoke.abilities[0].ability['name'];
         document.getElementById('pokePopUp').classList.add('hidden');
+        document.getElementById('clickMe').classList.remove('hidden');
         extraClick = 0;
-
-
-
       }
     };
     xhttp.open('GET', showMyPoke, true);
@@ -223,7 +227,9 @@ function getExtraInfo() {
   extraClick += 1;
   if(extraClick % 2 == 0) {
     document.getElementById('pokePopUp').classList.add('hidden');
+    document.getElementById('clickMe').classList.remove('hidden')
   } else {
     document.getElementById('pokePopUp').classList.remove('hidden');
+    document.getElementById('clickMe').classList.add('hidden');
   }
 }

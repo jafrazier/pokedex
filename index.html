@@ -10,7 +10,7 @@
   <title>Pokedex</title>
 </head>
 <body id="body">
-  <div id="welcomeBg" >
+  <!-- <div id="welcomeBg" >
 
 
   </div>
@@ -19,7 +19,7 @@
       <div class="welcomeBtn" onclick="welcomButton()">
         <h2>Welcome trainer</h2>
       </div>
-  </div>
+  </div> -->
   <div id="pokedex" class="pokeImg">
     <div class="pokemon">
       <img id="pokeDisplay" src="https://zippy.gfycat.com/NeighboringMisguidedBlackandtancoonhound.gif" alt="pikachu">
@@ -33,7 +33,7 @@
       <p>Abilities: <span id="abilities"></span></p>
       <button onclick="moreInfo()" class="moreInfo">More Info</button>
       <button onclick="playerLogin()" class="player">Sign In</button>
-      <button onclick="displayAshPoke()">explore</button>
+      <button id="displayedPoke"onclick="displayAshPoke()" class="hidden">explore</button>
       <div id="more" class="hidden">
         <p>Priority: <span id="priority"></span></p>
         <p>Power: <span id="power"></span></p>
@@ -133,6 +133,7 @@
       </div>
       <div id="chosenPoke">
         <img id="pokewindow" src="https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_960_720.png" alt="" onclick="getExtraInfo()">
+        <p id="clickMe" class="hidden">click me</p>
       </div>
     </div>
   </div>
